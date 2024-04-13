@@ -1,13 +1,184 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.topnav {
+  background-color: transparent;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.topnav a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 14px 16px;
+}
+
+.topnav a:hover {
+  color: black;
+  text-decoration: underline;
+}
+.topnav a.active {
+  color: black;
+  text-decoration: underline;
+}
+.footer {
+  padding-top: 20px;
+  background-color: antiquewhite;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  filter: drop-shadow(black 0.1rem 0rem 3px);
+}
+.footer p {
+  font-weight: 600;
+}
+.home-one {
+  position: relative;
+  display: flex;
+  justify-content: left;
+}
+.home-one img {
+  width: 100%;
+  filter: brightness(50%);
+  object-fit: cover;
+  height: 800px;
+}
+.home-one h1 {
+  position: absolute;
+  bottom: 480px;
+  left: 50px;
+  font-size: 80px;
+}
+
+.home-one p {
+  position: absolute;
+  bottom: 280px;
+  left: 50px;
+  font-size: 25px;
+}
+.home-one button {
+  position: absolute;
+  bottom: 100px;
+  left: 46%;
+  font-size: 30px;
+}
+.home-one .btn a {
+  text-decoration: none;
+  color: white;
+}
+.home-one .btn a:hover {
+  color: black;
+}
+
+.home-two {
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  filter: drop-shadow(black 0rem 0.2rem 5px);
+  z-index: 1;
+}
+.home-two h2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.home-three {
+  background-color: #00610e;
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+  position: relative;
+}
+.home-three img {
+  height: 500px;
+  filter: brightness(75%);
+}
+.home-three h1 {
+  color: white;
+  position: absolute;
+  right: 80px;
+  top: 30px;
+  font-size: 60px;
+}
+.home-three p {
+  color: white;
+  position: absolute;
+  font-size: 20px;
+  top: 220px;
+  left: 53%;
+}
+.home-three button {
+  position: absolute;
+  left: 69%;
+  top: 83%;
+  font-size: 25px;
+}
+
+.articles-one {
+  position: relative;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.articles-one img {
+  object-fit: cover;
+  width: 100%;
+  filter: brightness(50%);
+  height: 800px;
+}
+
+.articles-one h1 {
+  position: absolute;
+  color: white;
+  right: 200px;
+  font-size: 60px;
+}
+.articles-two {
+  background-color: #00610e;
+}
+.articles-two-1 {
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 40px;
+}
+.articles-two-1 h1 {
+  font-size: 60px;
+  color: white;
+}
+.articles-two-2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.blgcrd {
+  padding: 40px;
+}
+.crdbdy {
+  background-color: #00610e;
 }
