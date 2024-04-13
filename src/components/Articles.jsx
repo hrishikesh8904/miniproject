@@ -11,7 +11,7 @@ function Articles() {
       </div>
       <div className="articles-two">
         <div className="articles-two-1">
-          <h1>Articles with blogs</h1>
+          <h1>Articles with blos</h1>
         </div>
         <div className="articles-two-2">
           <BlogCard />
