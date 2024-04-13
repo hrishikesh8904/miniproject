@@ -140,6 +140,7 @@ code {
   display: flex;
   justify-content: right;
   align-items: center;
+  filter: drop-shadow(black 0rem 0.2rem 5px);
 }
 
 .articles-one img {
@@ -180,5 +181,20 @@ code {
   padding: 40px;
 }
 .crdbdy {
-  background-color: #00610e;
+  background-color: white;
+}
+
+.articleimg {
+  height: 350px;
+  width: 300px;
+}
+.card-one {
+  transition: transform 0.5s;
+}
+.card-one:hover {
+  transform: scale(1.1);
+}
+.blog-card-button {
+  text-decoration: none;
+  color: #00610e;
 }
