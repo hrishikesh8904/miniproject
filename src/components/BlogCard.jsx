@@ -2,18 +2,14 @@ import React from "react";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-function BlogCard() {
+function BlogCard(props) {
   return (
     <div className="blgcrd">
-      {/* <Card style={({ width: "200px" }, { border: 0 })}> */}
-      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Img variant="top" src={props.img} />
       <Card.Body className="crdbdy">
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Button variant="outline-success">Go somewhere</Button>
+        <Card.Title>{props.name}</Card.Title>
+        <Card.Text>{props.script}</Card.Text>
+        <Button variant="outline-success">Read Blog</Button>
       </Card.Body>
       {/* </Card> */}
     </div>

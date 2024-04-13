@@ -20,6 +20,7 @@ function Articles() {
           <BlogCard />
           <BlogCard />
           <BlogCard />
+          <BlogCard />
         </div>
       </div>
       <Footer />
