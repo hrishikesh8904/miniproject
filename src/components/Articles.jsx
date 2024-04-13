@@ -1,5 +1,6 @@
 import React from "react";
 import Navbarcmp from "../Navbarcmp";
+import Footer from "../Footer";
 import BlogCard from "./BlogCard";
 function Articles() {
   return (
@@ -21,6 +22,7 @@ function Articles() {
           <BlogCard />
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
