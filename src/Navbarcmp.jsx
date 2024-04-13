@@ -18,14 +18,14 @@ function Navbarcmp(props) {
       break;
   }
   return (
-    <div class="topnav">
+    <div className="topnav">
       <a className={home} href="/">
         Home
       </a>
       <a className={findhelp} href="Findhelp">
         Find Help
       </a>
-      <a className={tracker} href="">
+      <a className={tracker} href="Tracker">
         Tracker
       </a>
       <a className={articles} href="Articles">

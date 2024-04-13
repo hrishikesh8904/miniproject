@@ -193,6 +193,7 @@ code {
 }
 .card-one:hover {
   transform: scale(1.1);
+  filter: drop-shadow(black 1rem 1rem 5px);
 }
 .blog-card-button {
   text-decoration: none;
