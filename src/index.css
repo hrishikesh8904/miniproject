@@ -250,7 +250,7 @@ code {
   padding-top: 10px;
 }
 
-.findhelp-three {
+.findhelp-three-1 {
   background-color: #47a455c1;
   display: flex;
   justify-content: space-evenly;
@@ -258,8 +258,6 @@ code {
   gap: 20px;
 }
 
-.Tiles-one{
-  padding:40px;
+.Tiles-one {
+  padding: 40px;
 }
-
-
