@@ -5,8 +5,8 @@ import Card from "react-bootstrap/Card";
 function Tiles(props) {
   return (
     <div className="Tiles-one">
-      <Card style={{ width: "18rem" }}>
-        <Card.Img variant="top" src={props.img} />
+      <Card className="card-one" style={{ width: "18rem" }}>
+        <Card.Img className = "article-img" variant="top" src={props.img} />
         <Card.Body>
           <Card.Text>
             <Card.Title>{props.name}</Card.Title>

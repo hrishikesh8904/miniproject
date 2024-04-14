@@ -192,8 +192,8 @@ code {
   transition: transform 0.5s;
 }
 .card-one:hover {
-  transform: scale(1.1);
-  filter: drop-shadow(black 1rem 1rem 5px);
+  transform: scale(1.05);
+  filter: drop-shadow(black 0.5rem 0.5rem 5px);
 }
 .blog-card-button {
   text-decoration: none;
@@ -254,174 +254,12 @@ code {
   background-color: #47a455c1;
   display: flex;
   justify-content: space-evenly;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  padding: 40px;
-  overflow-x: hidden;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.findhelp-four {
-  position: relative;
-  justify-content: space-between;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  padding: 40px;
-  overflow-x: hidden;
-  max-height: fit-content;
+.Tiles-one{
+  padding:40px;
 }
 
-.findhelp-five {
-  position: relative;
-  justify-content: space-between;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  padding: 40px;
-  left: 22rem;
-  bottom: 45.8rem;
-  overflow-x: hidden;
-  max-height: fit-content;
-}
 
-.findhelp-six {
-  position: relative;
-  justify-content: space-between;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  padding: 40px;
-  left: 44rem;
-  bottom: 90rem;
-  overflow-x: hidden;
-  max-height: fit-content;
-}
-
-.findhelp-seven {
-  position: relative;
-  justify-content: space-between;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  padding: 40px;
-  left: 66rem;
-  bottom: 135.8rem;
-  overflow-x: hidden;
-  max-height: fit-content;
-}
-
-.findhelp-eight {
-  position: relative;
-  justify-content: space-between;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  padding: 40px;
-  left: 0.1rem;
-  bottom: 137rem;
-  overflow-x: hidden;
-  max-height: fit-content;
-}
-
-.findhelp-nine {
-  position: relative;
-  justify-content: space-between;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  padding: 40px;
-  left: 22rem;
-  bottom: 224rem;
-  overflow-x: hidden;
-  max-height: fit-content;
-}
-
-.findhelp-ten {
-  position: relative;
-  justify-content: space-between;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  padding: 40px;
-  left: 44rem;
-  bottom: 270rem;
-  overflow-x: hidden;
-  max-height: fit-content;
-}
-
-.findhelp-eleven {
-  position: relative;
-  justify-content: space-between;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  padding: 40px;
-  left: 66rem;
-  bottom: 182.55rem;
-  overflow-x: hidden;
-  max-height: fit-content;
-}
-
-.findhelp-twelve {
-  position: absolute;
-  justify-content: space-between;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  padding: 40px;
-  left: 2.4rem;
-  top: 143rem;
-  overflow-x: hidden;
-  max-height: fit-content;
-}
-
-.findhelp-thirteen {
-  position: absolute;
-  justify-content: space-between;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  padding: 40px;
-  left: 24.5rem;
-  top: 143rem;
-  overflow-x: hidden;
-  max-height: fit-content;
-}
-
-.findhelp-fourteen {
-  position: absolute;
-  justify-content: space-between;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  padding: 40px;
-  left: 46.5rem;
-  top: 143rem;
-  overflow-x: hidden;
-  max-height: fit-content;
-}
-
-.findhelp-fifteen {
-  position: absolute;
-  justify-content: space-between;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  padding: 40px;
-  left: 68.5rem;
-  top: 143rem;
-  overflow-x: hidden;
-  max-height: fit-content;
-}
-
-.Tiles-one {
-  color: #fff;
-  text-align: left;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.Tiles-one :hover {
-  background-color: #3498db;
-}
