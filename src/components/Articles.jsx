@@ -25,7 +25,6 @@ function Articles() {
       </div>
       <div className="articles-two">
         <div className="articles-two-1">
-          <h1>Hrishikesh</h1>
           <h1>Articles with blogs</h1>
         </div>
         <div className="articles-two-2">{Dataarticles.map(createCard)}</div>
