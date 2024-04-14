@@ -252,6 +252,7 @@ code {
 
 .findhelp-three {
   background-color: #47a455c1;
+  display: flex;
   justify-content: space-evenly;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
