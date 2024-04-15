@@ -3,13 +3,26 @@ import Home from "./components/Home";
 import Articles from "./components/Articles";
 import Findhelp from "./components/Findhelp";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import SignIn from "./components/auth/SignIn";
+import SignUp from "./components/auth/SignUp";
+import AuthDetails from "./components/AuthDetails";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return (
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route
+            path="/"
+            element={
+              <div>
+                <SignIn />
+                <SignUp />
+                <AuthDetails />
+              </div>
+            }
+          />
+          <Route path="/Home" element={<Home />} />
           <Route path="/articles" element={<Articles />} />
           <Route path="/Findhelp" element={<Findhelp />} />
         </Routes>
