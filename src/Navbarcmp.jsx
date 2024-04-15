@@ -19,7 +19,7 @@ function Navbarcmp(props) {
   }
   return (
     <div className="topnav">
-      <a className={home} href="/">
+      <a className={home} href="/Home">
         Home
       </a>
       <a className={findhelp} href="Findhelp">
@@ -31,6 +31,7 @@ function Navbarcmp(props) {
       <a className={articles} href="Articles">
         Articles
       </a>
+      <a href="/">SignOut</a>
     </div>
   );
 }

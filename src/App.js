@@ -5,7 +5,6 @@ import Findhelp from "./components/Findhelp";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SignIn from "./components/auth/SignIn";
 import SignUp from "./components/auth/SignUp";
-import AuthDetails from "./components/AuthDetails";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return (
@@ -15,10 +14,9 @@ function App() {
           <Route
             path="/"
             element={
-              <div>
+              <div className="signincontainer">
                 <SignIn />
                 <SignUp />
-                <AuthDetails />
               </div>
             }
           />

@@ -4,22 +4,22 @@ import Footer from "../Footer";
 import Tiles from "./Tiles";
 import Psych from "./Psych";
 
-function createCard(Psychterm){
-  return(
+function createCard(Psychterm) {
+  return (
     <Tiles
-    key={Psychterm.id}
-    img={Psychterm.img}
-    name={Psychterm.name}
-    email={Psychterm.email}
-    ph={Psychterm.ph}
-    sp={Psychterm.sp}
+      key={Psychterm.id}
+      img={Psychterm.img}
+      name={Psychterm.name}
+      email={Psychterm.email}
+      ph={Psychterm.ph}
+      sp={Psychterm.sp}
     />
   );
 }
 function Findhelp() {
   return (
     <div>
-      <Navbar />
+      <Navbar active="findhelp" />
       <div className="findhelp-one">
         <img src="counseller2.jpg" alt="" />
         <h1>We are here to Help</h1>
@@ -36,11 +36,9 @@ function Findhelp() {
         <h2>Choose the right mental health coach for you</h2>
       </div>
       <div className="findhelp-three">
-        <div className="findhelp-three-1">
-          {Psych.map(createCard)}
-        </div>
+        <div className="findhelp-three-1">{Psych.map(createCard)}</div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

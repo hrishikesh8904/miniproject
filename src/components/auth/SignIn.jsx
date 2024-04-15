@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { auth } from "../../firebase";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
+import "../../index.css";
 function SignIn() {
   const history = useNavigate();
   const [email, setEmail] = useState("");
@@ -20,7 +21,7 @@ function SignIn() {
     });
   }
   return (
-    <div>
+    <div className="card">
       <form onSubmit={signIn}>
         <h1>Log In</h1>
         <input
