@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { auth } from "../../firebase";
 import { signInWithEmailAndPassword } from "firebase/auth";
+import { useNavigate } from "react-router-dom";
 function SignIn() {
+  const history = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   function emailHandler(event) {
@@ -14,6 +16,7 @@ function SignIn() {
     event.preventDefault();
     signInWithEmailAndPassword(auth, email, password).then((userCredential) => {
       console.log(userCredential);
+      history("/Home");
     });
   }
   return (
