@@ -32,7 +32,7 @@ function Navbarcmp(props) {
       <Link className={articles} to="/Articles">
         Articles
       </Link>
-      <Link to="/">SignOut</Link>
+      <Link to="/SignInPage">SignIn</Link>
     </div>
   );
 }
