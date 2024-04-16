@@ -9,7 +9,7 @@ const Psych=[
     },
     {
         id: 2,
-        img:"mrigtrisha.jpg",
+        img:"Aakanksha-Kanojia.jpg",
         name:"Aakanksha Kanojia",
         email:"aakanksha@hopealive.in",
         ph:"9716765236",
