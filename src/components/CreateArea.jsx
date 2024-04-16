@@ -23,7 +23,7 @@ function CreateArea(props) {
     event.preventDefault();
   }
   return (
-    <div>
+    <div className="tracker-four">
       <form>
         <input
           onChange={handleChange}

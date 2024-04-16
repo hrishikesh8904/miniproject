@@ -372,7 +372,7 @@ code {
   outline: none;
 }
 
-form {
+.tracker-four form {
   position: relative;
   width: 480px;
   margin: 30px auto 20px auto;
@@ -381,7 +381,7 @@ form {
   border-radius: 7px;
   box-shadow: 0 1px 5px rgb(138, 137, 137);
 }
-form input,
+.tracker-four form input,
 form textarea {
   width: 100%;
   border: none;
@@ -391,7 +391,7 @@ form textarea {
   font-family: inherit;
   resize: none;
 }
-form button {
+.tracker form button {
   position: absolute;
   right: 18px;
   bottom: -18px;
