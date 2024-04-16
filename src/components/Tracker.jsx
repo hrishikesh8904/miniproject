@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { auth } from "../firebase";
 import Navbarcmp from "../Navbarcmp";
 import Footer from "../Footer";
 import CreateArea from "./CreateArea";
@@ -17,9 +18,23 @@ function Tracker() {
       });
     });
   }
+  const [isSignedIn, setIsSignedIn] = useState(false);
+
+  useEffect(() => {
+    // Check if user is already signed in
+    const unsubscribe = auth.onAuthStateChanged((user) => {
+      if (user) {
+        setIsSignedIn(true);
+      } else {
+        setIsSignedIn(false);
+      }
+    });
+
+    return () => unsubscribe();
+  }, []);
   return (
     <div>
-      <Navbarcmp active="tracker"></Navbarcmp>
+      <Navbarcmp isSignedIn={isSignedIn} active="tracker"></Navbarcmp>
       <div className="tracker-one">
         <div className="tracker-one-1">
           <h1>One Day at a Time</h1>

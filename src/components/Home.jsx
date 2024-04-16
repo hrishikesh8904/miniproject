@@ -1,11 +1,26 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { auth } from "../firebase";
 import Navbar from "../Navbarcmp";
 import Footer from "../Footer";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 function Home() {
+  const [isSignedIn, setIsSignedIn] = useState(false);
+
+  useEffect(() => {
+    // Check if user is already signed in
+    const unsubscribe = auth.onAuthStateChanged((user) => {
+      if (user) {
+        setIsSignedIn(true);
+      } else {
+        setIsSignedIn(false);
+      }
+    });
+
+    return () => unsubscribe();
+  }, []);
   return (
     <div>
-      <Navbar active="home" />
+      <Navbar isSignedIn={isSignedIn} active="home" />
       <div className="home-one">
         <img src="home2.jpg" alt="" />
         <h1>

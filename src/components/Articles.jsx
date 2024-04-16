@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { auth } from "../firebase";
 import Navbarcmp from "../Navbarcmp";
 import Footer from "../Footer";
 import BlogCard from "./BlogCard";
 import Dataarticles from "./Dataarticles";
 
-function createCard(Dataarticlesterm) {
+function createCard(Dataarticlesterm, index) {
   return (
     <BlogCard
       key={Dataarticlesterm.id}
+      id={index}
       img={Dataarticlesterm.img}
       name={Dataarticlesterm.name}
       script1={Dataarticlesterm.script1}
@@ -16,9 +18,24 @@ function createCard(Dataarticlesterm) {
 }
 
 function Articles() {
+  const [isSignedIn, setIsSignedIn] = useState(false);
+
+  useEffect(() => {
+    // Check if user is already signed in
+    const unsubscribe = auth.onAuthStateChanged((user) => {
+      if (user) {
+        setIsSignedIn(true);
+      } else {
+        setIsSignedIn(false);
+      }
+    });
+
+    return () => unsubscribe();
+  }, []);
+
   return (
     <div>
-      <Navbarcmp active="articles" />
+      <Navbarcmp isSignedIn={isSignedIn} active="articles" />
       <div className="articles-one">
         <img src="happypeople.jpg" alt="" />
         <div className="articles-one-1">

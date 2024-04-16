@@ -10,8 +10,7 @@ import Card from "react-bootstrap/Card";
 // }
 function BlogCard(props) {
   function handleClick(e) {
-    e.preventDefault();
-    console.log(e);
+    console.log(e.target.value);
   }
   return (
     <div className="blgcrd">
@@ -20,7 +19,12 @@ function BlogCard(props) {
         <Card.Body className="crdbdy">
           <Card.Title>{props.name}</Card.Title>
           <Card.Text>{props.script1}</Card.Text>
-          <Button onClick={handleClick} id="button" variant="outline-success">
+          <Button
+            onClick={handleClick}
+            value={props.id}
+            id="button"
+            variant="outline-success"
+          >
             Read Blog
           </Button>
         </Card.Body>

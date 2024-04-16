@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { auth } from "../firebase";
 import Navbar from "../Navbarcmp";
 import Footer from "../Footer";
 import Tiles from "./Tiles";
@@ -17,9 +18,23 @@ function createCard(Psychterm) {
   );
 }
 function Findhelp() {
+  const [isSignedIn, setIsSignedIn] = useState(false);
+
+  useEffect(() => {
+    // Check if user is already signed in
+    const unsubscribe = auth.onAuthStateChanged((user) => {
+      if (user) {
+        setIsSignedIn(true);
+      } else {
+        setIsSignedIn(false);
+      }
+    });
+
+    return () => unsubscribe();
+  }, []);
   return (
     <div>
-      <Navbar active="findhelp" />
+      <Navbar isSignedIn={isSignedIn} active="findhelp" />
       <div className="findhelp-one">
         <img src="counseller2.jpg" alt="" />
         <h1>We are here to Help</h1>
