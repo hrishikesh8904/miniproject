@@ -22,7 +22,7 @@ function Articles() {
       <div className="articles-one">
         <img src="happypeople.jpg" alt="" />
         <div className="articles-one-1">
-          <h1>Soul Reflections:</h1>
+          <h1>Soul Reflections</h1>
           <h3>Blogging the Journey to Mental Health</h3>
         </div>
       </div>
