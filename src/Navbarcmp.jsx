@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 function Navbarcmp(props) {
   var home, findhelp, tracker, articles;
   switch (props.active) {
@@ -19,19 +20,19 @@ function Navbarcmp(props) {
   }
   return (
     <div className="topnav">
-      <a className={home} href="/Home">
+      <Link className={home} to="/Home">
         Home
-      </a>
-      <a className={findhelp} href="Findhelp">
+      </Link>
+      <Link className={findhelp} to="/Findhelp">
         Find Help
-      </a>
-      <a className={tracker} href="Tracker">
+      </Link>
+      <Link className={tracker} to="/Tracker">
         Tracker
-      </a>
-      <a className={articles} href="Articles">
+      </Link>
+      <Link className={articles} to="/Articles">
         Articles
-      </a>
-      <a href="/">SignOut</a>
+      </Link>
+      <Link to="/">SignOut</Link>
     </div>
   );
 }

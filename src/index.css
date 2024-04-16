@@ -271,7 +271,10 @@ code {
   flex-wrap: wrap;
   gap: 30px;
 }
-
+.bck {
+  height: 100%;
+  background-color: peachpuff;
+}
 .signinpageheader {
   display: flex;
   justify-content: center;
@@ -320,11 +323,28 @@ code {
   width: 100%;
   margin: 10px 0;
 }
-
+.tracker-one {
+  text-align: center;
+}
 .tracker-one img {
   object-fit: cover;
   height: 100vh;
   width: 100%;
+}
+
+.tracker-one-1 {
+  top: 200px;
+  width: 100%;
+  position: absolute;
+}
+.tracker-one-1 h1 {
+  color: white;
+  font-size: 60px;
+  font-weight: bolder;
+  text-align: center;
+}
+.tracker-one-1 h3 {
+  color: white;
 }
 .tracker-two {
   background-color: #f5ba13;

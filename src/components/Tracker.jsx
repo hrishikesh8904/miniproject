@@ -21,6 +21,10 @@ function Tracker() {
     <div>
       <Navbarcmp active="tracker"></Navbarcmp>
       <div className="tracker-one">
+        <div className="tracker-one-1">
+          <h1>One Day at a Time</h1>
+          <h3>Set Small Goals, To achieve Bigger Goals</h3>
+        </div>
         <img src="tracker.webp" alt="" />
       </div>
       <div className="tracker-two">

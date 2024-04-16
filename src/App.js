@@ -3,6 +3,7 @@ import Home from "./components/Home";
 import Articles from "./components/Articles";
 import Findhelp from "./components/Findhelp";
 import Tracker from "./components/Tracker";
+import Footer from "./Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SignIn from "./components/auth/SignIn";
 import SignUp from "./components/auth/SignUp";
@@ -24,6 +25,7 @@ function App() {
                   <SignIn />
                   <SignUp />
                 </div>
+                <Footer />
               </div>
             }
           />
