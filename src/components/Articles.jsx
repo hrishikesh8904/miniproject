@@ -21,7 +21,10 @@ function Articles() {
       <Navbarcmp active="articles" />
       <div className="articles-one">
         <img src="happypeople.jpg" alt="" />
-        <h1>Blog</h1>
+        <div className="articles-one-1">
+          <h1>Soul Reflections:</h1>
+          <h3>Blogging the Journey to Mental Health</h3>
+        </div>
       </div>
       <div className="articles-two">
         <div className="articles-two-1">
