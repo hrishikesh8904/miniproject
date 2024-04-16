@@ -41,8 +41,10 @@ function SignUp() {
 
   return (
     <div className="card">
-      <form onSubmit={signUp}>
+      <div className="card-title">
         <h1>Sign Up</h1>
+      </div>
+      <form className="form" onSubmit={signUp}>
         <input
           type="email"
           placeholder="Enter your Email"

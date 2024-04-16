@@ -22,8 +22,10 @@ function SignIn() {
   }
   return (
     <div className="card">
-      <form onSubmit={signIn}>
+      <div className="card-title">
         <h1>Log In</h1>
+      </div>
+      <form className="form" onSubmit={signIn}>
         <input
           type="email"
           placeholder="Enter your Email"
