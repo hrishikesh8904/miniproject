@@ -2,6 +2,7 @@ import React from "react";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import { Link } from "react-router-dom";
 // const element = document.getElementById("button");
 // if (element) {
 //   element.addEventListener("click", function (event) {
@@ -9,9 +10,6 @@ import Card from "react-bootstrap/Card";
 //   });
 // }
 function BlogCard(props) {
-  function handleClick(e) {
-    console.log(e.target.value);
-  }
   return (
     <div className="blgcrd">
       <Card className="card-one" style={{ width: "18rem" }}>
@@ -19,13 +17,8 @@ function BlogCard(props) {
         <Card.Body className="crdbdy">
           <Card.Title>{props.name}</Card.Title>
           <Card.Text>{props.script1}</Card.Text>
-          <Button
-            onClick={handleClick}
-            value={props.id}
-            id="button"
-            variant="outline-success"
-          >
-            Read Blog
+          <Button value={props.id} id="button" variant="outline-success">
+            <Link to="/BlogPage">Read Blog</Link>
           </Button>
         </Card.Body>
       </Card>
@@ -39,3 +32,9 @@ export default BlogCard;
 //               Read Blog
 //             </a> */
 // }
+
+// function handleClick(e) {
+//   <BlogPage></BlogPage>;
+// }
+
+// onClick={handleClick}
