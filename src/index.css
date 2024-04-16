@@ -162,7 +162,7 @@ code {
   color: white;
 }
 .articles-two {
-  background-color: #47a455c1;
+  background-color: peachpuff;
 }
 .articles-two-1 {
   width: 100%;
@@ -172,7 +172,7 @@ code {
 }
 .articles-two-1 h1 {
   font-size: 60px;
-  color: white;
+  color: black;
 }
 .articles-two-2 {
   width: 100%;
@@ -256,7 +256,7 @@ code {
 }
 
 .findhelp-three-1 {
-  background-color: #47a455c1;
+  background-color: peachpuff;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
