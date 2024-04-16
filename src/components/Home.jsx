@@ -14,9 +14,9 @@ function Home() {
         </h1>
         <p>
           Everyone benefits when people feel their best. <br />
-          Spring Health is the proven mental health solution <br /> for
-          employers and health plans that changes lives and <br /> drives
-          business results, everywhere.
+          SereneSoul is the proven mental health solution <br /> for employers
+          and health plans that changes lives and <br /> drives business
+          results, everywhere.
         </p>
         <button className="btn btn-outline-light btn-lg">
           <a href="Articles">Explore</a>
@@ -31,8 +31,8 @@ function Home() {
           Inclusive Mental Health <br /> for Everyone
         </h1>
         <p>
-          Spring Health is a comprehensive mental health solution for employers
-          and health plans. <br /> Unlike any other solution, we use Precision
+          SereneSoul is a comprehensive mental health solution for employers and
+          health plans. <br /> Unlike any other solution, we use Precision
           Mental Healthcare to seamlessly pinpoint and deliver exactly the right
           fit for each person - whether that’s digital support, meditation
           exercises, coaching, therapy, medication, and beyond.
