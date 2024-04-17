@@ -27,6 +27,7 @@ function App() {
                 name={dataarticles[0].name}
                 script1={dataarticles[0].script1}
                 img={dataarticles[0].img}
+                content={dataarticles[0].content}
               />
             }
           ></Route>
@@ -37,6 +38,7 @@ function App() {
                 img={dataarticles[1].img}
                 name={dataarticles[1].name}
                 script1={dataarticles[1].script1}
+                content={dataarticles[1].content}
               />
             }
           ></Route>
@@ -47,6 +49,7 @@ function App() {
                 img={dataarticles[2].img}
                 name={dataarticles[2].name}
                 script1={dataarticles[2].script1}
+                content={dataarticles[2].content}
               />
             }
           ></Route>
@@ -57,6 +60,7 @@ function App() {
                 img={dataarticles[3].img}
                 name={dataarticles[3].name}
                 script1={dataarticles[3].script1}
+                content={dataarticles[3].content}
               />
             }
           ></Route>
@@ -67,6 +71,7 @@ function App() {
                 img={dataarticles[4].img}
                 name={dataarticles[4].name}
                 script1={dataarticles[4].script1}
+                content={dataarticles[4].content}
               />
             }
           ></Route>
@@ -77,6 +82,7 @@ function App() {
                 img={dataarticles[5].img}
                 name={dataarticles[5].name}
                 script1={dataarticles[5].script1}
+                content={dataarticles[5].content}
               />
             }
           ></Route>
