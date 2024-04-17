@@ -52,7 +52,9 @@ function Home() {
           fit for each person - whether that’s digital support, meditation
           exercises, coaching, therapy, medication, and beyond.
         </p>
-        <button className="btn btn-outline-light">Learn More</button>
+        <button className="btn btn-outline-light">
+          <a href="Findhelp">Learn More</a>
+        </button>
       </div>
       <Footer />
     </div>

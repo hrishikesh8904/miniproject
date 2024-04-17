@@ -86,7 +86,14 @@ code {
   text-decoration: none;
   color: white;
 }
+.home-three .btn a {
+  text-decoration: none;
+  color: white;
+}
 .home-one .btn a:hover {
+  color: black;
+}
+.home-three .btn a:hover {
   color: black;
 }
 
