@@ -36,16 +36,14 @@ function Findhelp() {
     <div>
       <Navbar isSignedIn={isSignedIn} active="findhelp" />
       <div className="findhelp-one">
+        <div className="findhelp-one-1">
+          <h1>We are here to Help</h1>
+          <h3>
+            Tailored guidance for emotional well-being from diverse expert
+            coaches.
+          </h3>
+        </div>
         <img src="counseller2.jpg" alt="" />
-        <h1>We are here to Help</h1>
-        <br></br>
-        <p>
-          Mental health coaches provide tailored support for individuals seeking
-          guidance in managing their emotional well-being. With diverse
-          expertise, individuals can select the coach best suited to their
-          needs, whether for coping strategies, stress management, or personal
-          growth.
-        </p>
       </div>
       <div className="findhelp-two">
         <h2>Choose the right mental health coach for you</h2>
