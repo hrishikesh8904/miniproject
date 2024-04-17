@@ -430,3 +430,57 @@ form textarea {
   cursor: pointer;
   outline: none;
 }
+
+.blog-page-one {
+  display: flex;
+  justify-content: center;
+}
+.blog-page-one-1 {
+  display: flex;
+  justify-content: center;
+  padding: 50px 50px 10px;
+}
+.blog-page-one-1 img {
+  height: 200px;
+}
+.blog-page-two {
+  display: flex;
+  justify-content: end;
+}
+.blog-page-two h3 {
+  padding-right: 55px;
+}
+/* .blog-page-three {
+  display: flex;
+  justify-content: start;
+}
+.blog-page-three p {
+  padding-left: 50px;
+  width: 80vw;
+} */
+.blog-page-three {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.blog-page-three h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+.blog-page-three p {
+  padding-left: 50px;
+  padding-right: 30%;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.blog-page-three img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
