@@ -4,28 +4,10 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import dataarticles from "./Dataarticles";
 import { useNavigate } from "react-router-dom";
-// import Dataarticles from "./Dataarticles";
-// const element = document.getElementById("button");
-// if (element) {
-//   element.addEventListener("click", function (event) {
-//     console.log(event);
-//   });
-// }
 
 function BlogCard(props) {
   const navigate = useNavigate();
   function handleClick(event) {
-    // return Dataarticles.filter((name) => name.id === event.target.value).map(
-    //   (person) => (
-    //     <Link>
-    //       <BlogPage>
-    //         script1: {person.script1}
-    //         img: {person.img}
-    //         name: {person.name}
-    //       </BlogPage>
-    //     </Link>
-    //   )
-    // );
     const filteredData = dataarticles.filter((name) => name.id === props.id);
     navigate({
       pathname: `/BlogPage/${props.id}`,

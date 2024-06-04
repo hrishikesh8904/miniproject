@@ -29,6 +29,4 @@ function Tiles(props) {
     </div>
   );
 }
-
 export default Tiles;
-  
